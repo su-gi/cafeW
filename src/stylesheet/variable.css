@@ -1,0 +1,20 @@
+:root {
+  --primary-bg-color: #282725;
+  --primary-bg-color2: rgba(40, 39, 37, 0.95);
+  --primary-bg-color3: #7D6F5D;
+  --primary-bg-color4: #E5E5E5;
+  --season-bg-color: #F3D6B0;
+  --notice-bg-color: rgba(226, 119, 98, 0.9);
+  --lecture-dark-color: #282725;
+  --season-text-color: #A37356;
+  --season-text-color2: #E27762;
+  --primary-color: #FFFCF9;
+  --primary-color2: #412311;
+  --primary-color3: #5f4c4c;
+  --primary-color4: rgba(182, 140, 112, 0.08);
+  --primary-border-color: rgba(255, 252, 249, 0.5);
+  --season-border-color: rgba(163, 155, 86, 0.5);
+  --text-normal: 1.6rem;
+
+}
+

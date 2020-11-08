@@ -1,0 +1,16 @@
+@function deunit($value) {
+  @if type-of($value) == 'number' {
+    @if (unitless($value)) {
+      @return $value;
+    } @else if unit($value) == 'em' {
+      @return $value / 1em;
+    } @else if unit($value) == 'px' {
+      @return $value / 1px;
+    } @else if unit($value) == 'pt' {
+      @return $value / 1pt;
+    }
+  } @else {
+    @warn "#{$value}는 숫자 값이 아닙니다.";
+    @return $value;
+  }
+}

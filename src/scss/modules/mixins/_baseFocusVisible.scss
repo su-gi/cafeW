@@ -1,0 +1,22 @@
+@import '../../config';
+@import '../functions';
+
+@mixin baseFocusVisible(
+  $focus-visible-style: 0 0 0 rem(4px) $netflix-focus-visible,
+  $radius: rem(2px)
+) {
+  :focus {
+    outline: none;
+    box-shadow: $focus-visible-style;
+    border-radius: $radius;
+
+    &:not(:focus-visible) {
+      box-shadow: none;
+    }
+  }
+
+  :focus-visible {
+    box-shadow: $focus-visible-style;
+    border-radius: $radius;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../config';
+@import '../functions';
+
+$rem-base-value: 10px !default;
+$rem-font-size: 16px !default;
+
+@mixin baseFontSize($font-size: $rem-base-value, $font-face: SpoqaHanSans) {
+  :root {
+    font-size: $font-size;
+  }
+
+  body {
+    font: #{rem($body-font-size)} / 1.5 $font-face, Helvetica, Arial, sans-serif;
+  }
+}

@@ -1,0 +1,9 @@
+@import './deunit';
+
+$base-font-size: 16px !default;
+
+@function em($pixel, $base-size: $base-font-size) {
+  $pixel: deunit($pixel);
+  $base-size: deunit($base-size);
+  @return #{$pixel / $base-size}em;
+}

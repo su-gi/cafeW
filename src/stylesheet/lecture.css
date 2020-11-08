@@ -1,0 +1,201 @@
+/* 추천 강좌 배경 지정 */
+.lecture-container{
+  background: #fff;
+}
+
+/* 탭 메뉴 */
+.tab-list{
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.tab-list li{
+  width: 50%;
+}
+.tab{
+  display: block;
+  background: var(--lecture-dark-color);
+  height: 64px;  
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.tab[aria-selected='true']{
+  background: #fff;
+  color: var(--lecture-dark-color);
+}
+
+.tab::after{
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: url(./../images/icon-down.svg) no-repeat 0 0 / 100% 100%;
+}
+
+.tab[aria-selected='true']::after{
+  background-image: url(./../images/icon-up.svg);
+}
+
+.lecture__panel{
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 40px 108px 38px 108px;
+}
+.lecture__panel .button-prev, 
+.lecture__panel .button-next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-prev{
+  left: 53px;
+}
+.button-next{
+  right: 54px;
+}
+
+.lecture__detail{
+  perspective: 3000px;
+  width: 590px;
+  height: 424px;
+  margin: 0 11px;
+}
+.lecture__detail, .front, .back{
+  border-radius: 15px;
+}
+
+/* 카드 */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 500ms;
+  transform-style: preserve-3d;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+/* 카드 앞면 */
+.front{
+  padding-top: 212px;
+  background-repeat:  no-repeat;
+  background-position: 50% 0;
+  filter: drop-shadow(0px 2px 10px rgba(77, 46, 46, 0.1));
+}
+/* .lecture__panel .lecture__detail:nth-of-type(1) .front{
+  background-image: url(./../images/image06.png);
+}
+.lecture__panel .lecture__detail:nth-of-type(2) .front{
+  background-image: url(./../images/image05.png);
+} */
+.front.git{
+  background-image: url(./../images/image06.png);
+}
+.front.rwd{
+  background-image: url(./../images/image05.png);
+}
+
+.front__container{
+  background: var(--primary-bg-color);
+  height: 212px;
+  padding: 30px 0;
+  text-align: center;
+}
+[class^="lecture__title"]{
+  display: block;
+  margin: 0;
+}
+.lecture__title-en{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.lecture__title-ko{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.front .lecture__title-ko{
+  margin: 10px 0 25px;
+}
+.front:hover .front__container{
+  background: var(--primary-color);
+  color: 
+}
+.front:hover .lecture__title-en{
+  color: var(--primary-color2);
+}
+.front:hover .lecture__title-ko{
+  color: var(--primary-color3);
+}
+.front:hover .button-stroke{
+  color: var(--primary-bg-color);
+  border-color:  var(--primary-bg-color);
+}
+
+/* 카드 뒷면 */
+.back{
+  padding: 35px;
+  background: var(--primary-bg-color2);
+  transform: rotateY( 180deg );
+}
+/* 카드 뒷면 제목 */
+.back .lecture__title-ko{
+  margin: 7px 0 10px;
+}
+
+/* 닫기 버튼 */
+.back .close-button{
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
+/* 강의 평점 */
+.lecture__detail .star-point__detail span{
+  font-size: 1.8rem;
+  margin-right: 12px;
+}
+
+/* 학습정보 테이블 */
+.lecture__table{
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+.lecture__table, .lecture__table tr{
+  border-top: 1px solid var(--primary-color);
+}
+.lecture__table th{
+  text-align: left;
+}
+.lecture__table th, .lecture__table td{
+  padding: 15px 5px;
+}
+
+/* 정지/재생 및 인디케이터 */
+.lecture__control-bar{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+}
+.lecture__control-bar .indicator-list{
+  margin-left: 5px;
+}

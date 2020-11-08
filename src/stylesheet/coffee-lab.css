@@ -1,0 +1,71 @@
+.coffee-lab-container{
+  background: var(--primary-color);
+}
+.coffee-lab{
+  color: #000;
+  padding: 80px 120px;
+}
+.coffee-lab__title, 
+.coffee-lab__description{
+  text-align: center;
+  text-transform: uppercase;
+}
+.coffee-lab__title{
+  margin-bottom: 8px;
+  font-size: 4.6rem;
+}
+.coffee-lab__description{
+  margin: 0;
+  font-size: 1.6rem;
+}
+.coffee-lab__description::after{
+  display: block;
+  content: "";
+  width: 70px;
+  margin: 55px auto 0;
+  border-top: 1px solid var(--primary-bg-color3);
+}
+.coffee-lab--thin{
+  font-weight: 100;
+}
+.coffee-lab--bold{
+  font-weight: 700;
+}
+.coffee-lab__lab-list{
+  margin: 55px 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.coffee-lab__lab-item{
+  min-width: 692px;
+  height: 692px;
+  margin-top: 133px;
+  position: relative;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.coffee-lab__lab-item a{
+  position: absolute;
+  top: 497px;
+  left: 253px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.coffee-lab__lab-item a::after{
+  display: block;
+  content: "";
+  border-top: 10px solid var(--primary-color);
+  margin-top: 20px;
+}
+.coffee-lab__lab-item.menu{
+  background: url(./../images/photo-frame1.jpg) no-repeat 0 0 / 100% 100%;
+  top: -133px;
+  z-index: 1;
+}
+.coffee-lab__lab-item.brista{
+  background: url(./../images/photo-frame2.jpg) no-repeat 0 0 / 100% 100%;
+  left: -184px;
+}

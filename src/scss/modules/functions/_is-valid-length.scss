@@ -1,0 +1,13 @@
+// 값을 전달 받아 유효한 값인지 검토하는 함수
+// [참고]
+// 빌트인 함수: https://sass-lang.com/documentation/modules/meta#functions
+// 단위 빌트인 함수: https://sass-lang.com/documentation/modules/math#unit-functions
+// 리스트 함수: https://sass-lang.com/documentation/modules/list
+@function is-valid-length($value) {
+  // 조건 1. 값의 유형이 `숫자`이고, 단위 값을 가지고 있다.
+  $condition1: (type-of($value) == 'number' and not unitless($value));
+  // 조건 2. 또는 값이 auto, initial, inherit, 0 중 하나이다.
+  $condition2: (index(auto initial inherit 0, $value) != false);
+  // 조건 1 또는 2를 만족할 경우 true 반환, 만족하지 않을 경우 false 반환
+  @return $condition1 or $condition2;
+}

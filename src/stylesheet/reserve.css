@@ -1,0 +1,36 @@
+.reserve-container{
+  background: radial-gradient(109.05% 429.25% at 50% 50%, rgba(23, 15, 4, 0) 0%, #3C1D0A 100%), url(./../images/reserve-bg.jpg) no-repeat 50% 0 / 100%;
+}
+/* reserve 섹션 */
+.reserve{
+  position: relative;
+  height: 458px;
+  padding: 90px 0 0 224px;
+  color: var(--season-text-color);
+}
+.reserve__title{
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.reserve__subtitle{
+  font-size: 2.6rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.reserve__description{
+  width: 192px;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+.reserve__more{
+  display: inline-block;
+  margin-top: 20px;
+  border-color: var(--season-text-color);
+  color: var(--season-text-color);
+}
+.reserve__bg-container{
+  position: absolute;
+  top: 124px;
+  left: 120px;
+}

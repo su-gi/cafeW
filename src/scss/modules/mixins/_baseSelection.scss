@@ -1,0 +1,10 @@
+@mixin baseSelection($background: #000, $color: #fff) {
+  ::selection {
+    background: $background;
+    color: $color;
+  }
+
+  img::selection {
+    background: transparent;
+  }
+}

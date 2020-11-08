@@ -1,0 +1,53 @@
+/* 메인 영역을 기준으로 공지사항을 배치하기 위함. */
+.main{
+  position: relative;
+}
+
+.notice{
+  background-color: var(--notice-bg-color);
+  width: 420px;
+  height: 60px;
+  position: absolute;
+  top: 560px;
+  left: 50%;
+  padding: 0 10px 0 30px;
+  border-radius: 100px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+/* 공지사항 목록 */
+.notice__inform-list{
+  margin: 0 30px 0 0;
+  height: 24px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.notice__inform-item{
+  height: 24px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.notice__inform-item::before{
+  content: "";
+  width: 26px;
+  height: 24px;
+  background: url(./../images/icon-sound.svg) no-repeat 0 0 / 100% 100%;
+}
+.notice__inform-item a{
+  margin: 0 19px;
+  flex-grow: 1;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 공지사항 닫기 버튼 */
+.close-button{
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}

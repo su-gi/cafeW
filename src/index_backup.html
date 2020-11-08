@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe W 메인</title>
+  <link rel="stylesheet" href="./scss/style.scss" />
+ </head>
+ <body>
+   <div class="body-container">
+    <div class="layout-full header-container">
+      <div class="layout-width">
+        <header class="header">
+           <h1 class="header__logo">
+            <a href="index.html"><img src="./images/cafew-logo.svg" alt="cafe W" /></a>
+           </h1>
+           <ul class="header__member-list">
+            <li class="header__member-item"><a href="#">Sign In</a></li>
+            <li class="header__member-item"><a href="#">Sign Up</a></li>
+           </ul>
+           <form action="#">
+            <fieldset>
+             <legend>검색 폼</legend>
+             <div class="search">
+              <div class="search__input-container">
+               <input
+                type="search"
+                aria-label="검색어"
+                name="keyword"
+                aria-required="true"
+               />
+              </div>
+              <div class="search__button-container">
+               <button type="button">
+                <svg
+                 width="40"
+                 height="40"
+                 viewBox="0 0 40 40"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                >
+                 <title>검색</title>
+                 <path
+                  d="M22.75 8C23.5078 8 24.2383 8.09766 24.9414 8.29297C25.6445 8.48828 26.3008 8.76562 26.9102 9.125C27.5195 9.48438 28.0742 9.91797 28.5742 10.4258C29.082 10.9258 29.5156 11.4805 29.875 12.0898C30.2344 12.6992 30.5117 13.3555 30.707 14.0586C30.9023 14.7617 31 15.4922 31 16.25C31 17.0078 30.9023 17.7383 30.707 18.4414C30.5117 19.1445 30.2344 19.8008 29.875 20.4102C29.5156 21.0195 29.082 21.5781 28.5742 22.0859C28.0742 22.5859 27.5195 23.0156 26.9102 23.375C26.3008 23.7344 25.6445 24.0117 24.9414 24.207C24.2383 24.4023 23.5078 24.5 22.75 24.5C21.7734 24.5 20.8359 24.3359 19.9375 24.0078C19.0469 23.6797 18.2266 23.207 17.4766 22.5898L8.27734 31.7773C8.12891 31.9258 7.95312 32 7.75 32C7.54688 32 7.37109 31.9258 7.22266 31.7773C7.07422 31.6289 7 31.4531 7 31.25C7 31.0469 7.07422 30.8711 7.22266 30.7227L16.4102 21.5234C15.793 20.7734 15.3203 19.9531 14.9922 19.0625C14.6641 18.1641 14.5 17.2266 14.5 16.25C14.5 15.4922 14.5977 14.7617 14.793 14.0586C14.9883 13.3555 15.2656 12.6992 15.625 12.0898C15.9844 11.4805 16.4141 10.9258 16.9141 10.4258C17.4219 9.91797 17.9805 9.48438 18.5898 9.125C19.1992 8.76562 19.8555 8.48828 20.5586 8.29297C21.2617 8.09766 21.9922 8 22.75 8ZM22.75 23C23.6797 23 24.5547 22.8242 25.375 22.4727C26.1953 22.1133 26.9102 21.6289 27.5195 21.0195C28.1289 20.4102 28.6094 19.6953 28.9609 18.875C29.3203 18.0547 29.5 17.1797 29.5 16.25C29.5 15.3203 29.3203 14.4453 28.9609 13.625C28.6094 12.8047 28.1289 12.0898 27.5195 11.4805C26.9102 10.8711 26.1953 10.3906 25.375 10.0391C24.5547 9.67969 23.6797 9.5 22.75 9.5C21.8203 9.5 20.9453 9.67969 20.125 10.0391C19.3047 10.3906 18.5898 10.8711 17.9805 11.4805C17.3711 12.0898 16.8867 12.8047 16.5273 13.625C16.1758 14.4453 16 15.3203 16 16.25C16 17.1797 16.1758 18.0547 16.5273 18.875C16.8867 19.6953 17.3711 20.4102 17.9805 21.0195C18.5898 21.6289 19.3047 22.1133 20.125 22.4727C20.9453 22.8242 21.8203 23 22.75 23Z"
+                  fill="#FFFCF9"
+                 />
+                </svg>
+               </button>
+              </div>
+             </div>
+            </fieldset>
+           </form>
+  
+         </header>
+      </div>
+     </div>  
+    <div class="layout-full navigation-container">
+      <div class="layout-width">
+        <nav class="navigation">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+          <ul class="navigation__menu-list">
+            <li class="navigation__menu-item">
+              <a href="#">Drinks</a>
+              <ul class="navigation__sub-menu-list">
+                <li><a href="#">콜드 브루</a></li>
+                <li><a href="#">에스프레소</a></li>
+                <li><a href="#">기타 제조 음료</a></li>
+              </ul>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">Foods</a>
+              <ul class="navigation__sub-menu-list">
+                <li><a href="#">베이커리</a></li>
+                <li><a href="#">케잌</a></li>
+                <li><a href="#">샌드위치 & 샐러드</a></li>
+              </ul>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">Products</a>
+              <ul class="navigation__sub-menu-list">
+                <li><a href="#">머그</a></li>
+                <li><a href="#">텀블러</a></li>
+                <li><a href="#">커피용품</a></li>
+              </ul>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">Lectures</a>
+              <ul class="navigation__sub-menu-list">
+                <li><a href="#">UI 구조 & 디자인</a></li>
+                <li><a href="#">UI  인터렉션 주니어</a></li>
+                <li><a href="#">리엑트 프로그래밍</a></li>
+              </ul>
+            </li>
+            <li class="navigation__menu-item">
+              <a href="#">Customer Service</a>
+              <ul class="navigation__sub-menu-list">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">추천 채널</a></li>
+                <li><a href="#">체크 리스트</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>  
+    <div class="layout-full main-container">
+      <main class="main">
+        <div class="layout-full season-container">
+          <div class="layout-width">
+            <section class="season">
+              
+                <h2 class="a11y-hidden">시즌 음료</h2>
+                <p class="season__description">
+                  <span class="season__description-text1">spring is a cup</span>
+                  <span class="season__description-text2 season-bar"><span>of</span></span>
+                  <span class="season__description-text3">choux</span>
+                  <span class="season__description-text4">cream</span>
+                  <span class="season__description-text5">봄이 왔다 커피가 설렌다</span>
+                </p>
+                <ul class="season__beverage-list">
+                  <li class="season__beverage-item">
+                    <img src="./images/beverage1.png" srcset="./images/beverage1@2x.png 2x" alt="strawberry layer - choux cream frappuccino(딸기 레이어 슈 크림 프라푸치노)">
+                  </li>
+                  <li class="season__beverage-item">
+                    <img src="./images/beverage2.png" srcset="./images/beverage2@2x.png 2x" alt="choux cream latte(슈 크림 라떼)">
+                  </li>
+                  <li class="season__beverage-item">
+                    <img src="./images/beverage3.png" srcset="./images/beverage3@2x.png 2x" alt="spring peach green tea(스프링 피치 그린 티)">
+                  </li>
+                </ul>
+                <a href="#" class="season__more">자세히보기</a>
+              
+            </section>
+          </div>
+        </div>
+        <div class="layout-full notice-container">
+          <div class="layout-width">
+            <section class="notice">
+              <h2 class="a11y-hidden">공지사항</h2>
+              <ul class="notice__inform-list">
+                <li class="notice__inform-item">
+                  <a href="#">카페 W 영업시간 조정 안내 사항입니다. 필독해 주세요.</a>
+                  <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                </li>
+                <li class="notice__inform-item">
+                  <a href="#">이듬 강좌 개설 안내</a>
+                  <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                </li>
+                <li class="notice__inform-item">
+                  <a href="#">멀티캠퍼스 휴관일 안내</a>
+                  <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                </li>
+                <li class="notice__inform-item">
+                  <a href="#">AOA11Y 라이브 일정</a>
+                  <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                </li>
+              </ul>
+              <button class="close-button" type="button">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>공지사항 닫기</title>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M31 11.0823L29.9177 10L20.5002 19.4172L11.0823 10L10 11.0831L19.4175 20.4998L10 29.9169L11.0823 30.9985L20.4996 21.5819L29.9177 30.9992L31 29.9162L21.5823 20.4992L31 11.0823Z" fill="white"/>
+                </svg>          
+              </button>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full lecture-container">
+          <div class="layout-width">
+            <section class="lecture">
+              
+                <h2 class="a11y-hidden">추천강좌</h2>
+                <ul class="tab-list" aria-label="추천강좌 탭 메뉴">
+                  <li role="none">
+                    <a href="#" class="tab" role="tab" id="tabMulti" aria-selected="true" aria-controls="lectureMulti">
+                      <b>멀티 캠퍼스&nbsp;</b> 추천 강좌
+                    </a>
+                  </li>
+                  <li role="none">
+                    <a href="#" role="tab" class="tab" id="tabEuid" aria-selected="false"" aria-controls="lectureEuid">
+                      <b>이듬 블렌디드 러닝&nbsp;</b> 추천 강좌
+                    </a>
+                  </li>
+                </ul>
+                <div class="lecture__panel" id="lectureMulti" role="tabpanel" aria-labelledby="tabMulti">
+                  <div class="lecture__button-container">
+                    <button type="button" class="button-prev">
+                      <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>이전 강좌 보기</title>
+                        <path d="M13.0312 22.875L11.9766 23.9297L0 11.9648L11.9766 0L13.0312 1.05469L2.13281 11.9648L13.0312 22.875Z" fill="#282725"/>
+                      </svg>              
+                    </button>
+                    <button type="button" class="button-next">
+                      <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>다음 강좌 보기</title>
+                        <path d="M0 22.875L10.8984 11.9648L0 1.05469L1.05469 0L13.0312 11.9648L1.05469 23.9297L0 22.875Z" fill="#282725"/>
+                      </svg>              
+                    </button>
+                  </div>          
+                  <article class="lecture__detail">
+                    <div class="card">
+                      <div class="front git">
+                        <div class="front__container">
+                         <h3 class="lecture__title">
+                           <span class="lecture__title-en">Git &<br />HTML/CSS</span>
+                           <span class="lecture__title-ko">입문자를 위한 Git과 HTML&CSS</span>
+                          </h3>
+                         <button type="button" class="button-stroke">강의정보</button>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="back__container">
+                          <p class="lecture__title-en">Git & HTML/CSS</p>
+                          <p class="lecture__title-ko">입문자를 위한 Git과 HTML&CSS</p>
+                          <dl class="star-point">
+                            <dt class="a11y-hidden">강의평점</dt>
+                            <dd class="star-point__detail">
+                              <span aria-hidden="true">
+                                <svg width="124" height="23" viewBox="0 0 124 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M11.1847 0L13.6958 7.72828H21.8218L15.2477 12.5046L17.7588 20.2329L11.1847 15.4566L4.61063 20.2329L7.1217 12.5046L0.547638 7.72828H8.67363L11.1847 0Z" fill="#FFFCF9"/>
+                                  <path d="M36.8932 0L39.4217 7.78194L47.6041 7.78195L40.9844 12.5915L43.5129 20.3734L36.8932 15.5639L30.2735 20.3734L32.802 12.5915L26.1823 7.78195L34.3647 7.78194L36.8932 0Z" fill="#FFFCF9"/>
+                                  <path d="M62.5243 0L65.0528 7.78194L73.2352 7.78195L66.6155 12.5915L69.144 20.3734L62.5243 15.5639L55.9046 20.3734L58.4331 12.5915L51.8134 7.78195L59.9958 7.78194L62.5243 0Z" fill="#FFFCF9"/>
+                                  <path d="M87.3787 0L89.9072 7.78194L98.0896 7.78195L91.4699 12.5915L93.9984 20.3734L87.3787 15.5639L80.7589 20.3734L83.2874 12.5915L76.6677 7.78195L84.8501 7.78194L87.3787 0Z" fill="#FFFCF9"/>
+                                  <path d="M113.01 0L115.538 7.78194L123.721 7.78195L117.101 12.5915L119.629 20.3734L113.01 15.5639L106.39 20.3734L108.918 12.5915L102.299 7.78195L110.481 7.78194L113.01 0Z" fill="#FFFCF9" fill-opacity="0.4"/>
+                                </svg>
+                              </span>
+                              <span>4점</span>
+                            </dd>
+                          </dl>
+                          <table class="lecture__table" aria-label="학습시간, 난이도, 교육비지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표">
+                            <tr>
+                              <th>학습시간</th>
+                              <td>09:00 ~ 17:00 ( 28시간 )</td>
+                              <th>난이도</th>
+                              <td>초급</td>
+                            </tr>
+                            <tr>
+                              <th>교육비 지원</th>
+                              <td>고용보험 비환급</td>
+                              <th>평가항목</th>
+                              <td>출석률 100%</td>
+                            </tr>
+                            <tr>
+                              <th>수료기준</th>
+                              <td>총점 80점 이상시 수료</td>
+                              <th>정원</th>
+                              <td>24 명</td>
+                            </tr>
+                            <tr>
+                              <th>교재정보</th>
+                              <td colspan="3">
+                                입문자를 위한 Git과 HTML&CSS<br />
+                                HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)
+                              </td>
+                            </tr>
+                          </table>
+                          <button type="button" class="close-button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>강좌 상세정보 닫기</title>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M31 11.0823L29.9177 10L20.5002 19.4172L11.0823 10L10 11.0831L19.4175 20.4998L10 29.9169L11.0823 30.9985L20.4996 21.5819L29.9177 30.9992L31 29.9162L21.5823 20.4992L31 11.0823Z" fill="white"/>
+                            </svg> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="lecture__detail">
+                    <div class="card">
+                      <div class="front rwd">
+                        <div class="front__container">
+                         <h3 class="lecture__title">
+                           <span class="lecture__title-en">Responsive Web<br />Design Strategies</span>
+                           <span class="lecture__title-ko">반응형 웹디자인 전략</span>
+                          </h3>
+                         <button type="button" class="button-stroke">강의정보</button>
+                        </div>
+                      </div>
+                      <div class="back">
+                        <div class="back__container">
+                          <p class="lecture__title-en">Responsive Web Design Strategies</p>
+                          <p class="lecture__title-ko">반응형 웹디자인 전략</p>
+                          <dl class="star-point">
+                            <dt class="a11y-hidden">강의평점</dt>
+                            <dd class="star-point__detail">
+                              <span aria-hidden="true">
+                                <svg width="124" height="23" viewBox="0 0 124 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M11.1847 0L13.6958 7.72828H21.8218L15.2477 12.5046L17.7588 20.2329L11.1847 15.4566L4.61063 20.2329L7.1217 12.5046L0.547638 7.72828H8.67363L11.1847 0Z" fill="#FFFCF9"/>
+                                  <path d="M36.8932 0L39.4217 7.78194L47.6041 7.78195L40.9844 12.5915L43.5129 20.3734L36.8932 15.5639L30.2735 20.3734L32.802 12.5915L26.1823 7.78195L34.3647 7.78194L36.8932 0Z" fill="#FFFCF9"/>
+                                  <path d="M62.5243 0L65.0528 7.78194L73.2352 7.78195L66.6155 12.5915L69.144 20.3734L62.5243 15.5639L55.9046 20.3734L58.4331 12.5915L51.8134 7.78195L59.9958 7.78194L62.5243 0Z" fill="#FFFCF9"/>
+                                  <path d="M87.3787 0L89.9072 7.78194L98.0896 7.78195L91.4699 12.5915L93.9984 20.3734L87.3787 15.5639L80.7589 20.3734L83.2874 12.5915L76.6677 7.78195L84.8501 7.78194L87.3787 0Z" fill="#FFFCF9"/>
+                                  <path d="M113.01 0L115.538 7.78194L123.721 7.78195L117.101 12.5915L119.629 20.3734L113.01 15.5639L106.39 20.3734L108.918 12.5915L102.299 7.78195L110.481 7.78194L113.01 0Z" fill="#FFFCF9" fill-opacity="0.4"/>
+                                </svg>
+                              </span>
+                              <span>4점</span>
+                            </dd>
+                          </dl>
+                          <table class="lecture__table" aria-label="학습시간, 난이도, 교육비지원, 평가항목, 수료기준, 정원, 교재 정보 등을 나타낸 표">
+                            <tr>
+                              <th>학습시간</th>
+                              <td>09:00 ~ 17:00 ( 28시간 )</td>
+                              <th>난이도</th>
+                              <td>초급</td>
+                            </tr>
+                            <tr>
+                              <th>교육비 지원</th>
+                              <td>고용보험 비환급</td>
+                              <th>평가항목</th>
+                              <td>출석률 100%</td>
+                            </tr>
+                            <tr>
+                              <th>수료기준</th>
+                              <td>총점 80점 이상시 수료</td>
+                              <th>정원</th>
+                              <td>24 명</td>
+                            </tr>
+                            <tr>
+                              <th>교재정보</th>
+                              <td colspan="3">
+                                입문자를 위한 Git과 HTML&CSS<br />
+                                HTML & CSS 웹사이트 개발과 디자인 기초 (35,000원)
+                              </td>
+                            </tr>
+                          </table>
+                          <button type="button" class="close-button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <title>강좌 상세정보 닫기</title>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M31 11.0823L29.9177 10L20.5002 19.4172L11.0823 10L10 11.0831L19.4175 20.4998L10 29.9169L11.0823 30.9985L20.4996 21.5819L29.9177 30.9992L31 29.9162L21.5823 20.4992L31 11.0823Z" fill="white"/>
+                            </svg> 
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+          
+                  <div class="lecture__control-bar">
+                    <button type="button" class="button-play" aria-label="강좌 슬라이드 재생">
+                      <span class="ir dark"></span>
+                    </button>
+                    <ol class="indicator-list">
+                      <li class="indicator-item" aria-label="입문자를 위한 Git과 HTML/CSS" aria-current="true"></li>
+                      <li class="indicator-item" aria-label="반응형 웹디자인" aria-current="false" ></li>
+                      <li class="indicator-item" aria-label="업무에 바로쓰는 HTML5+CSS3" aria-current="false"></li>
+                    </ol>
+                  </div> 
+                </div>
+              
+            </section>
+          </div>
+        </div>    
+        <div class="layout-full review-favorite-container">
+          <div class="layout-width">
+            <section class="review">
+              <h2 class="a11y-hidden">강의 리뷰</h2>
+              <article class="review__article">
+                <button class="button-play">
+                  <span class="ir light"></span>
+                </button>
+                <h3 class="review__title">무엇이 중요한지 알게된 시간!</h3>
+                <p class="review__content">
+                  제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.
+                </p>
+                <dl class="star-point">
+                  <dt class="a11y-hidden">강의평점</dt>
+                  <dd class="star-point__detail">
+                    <span aria-hidden="true">
+                      <svg width="160" height="30" viewBox="0 0 160 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.4 0L17.633 9.95016H28.0952L19.6311 16.0997L22.8641 26.0498L14.4 19.9003L5.93589 26.0498L9.1689 16.0997L0.704788 9.95016H11.167L14.4 0Z" fill="#FFFCF9"/>
+                        <path d="M47.5 0L50.7555 10.0193L61.2903 10.0193L52.7674 16.2115L56.0229 26.2307L47.5 20.0385L38.9771 26.2307L42.2326 16.2115L33.7097 10.0193L44.2445 10.0193L47.5 0Z" fill="#FFFCF9"/>
+                        <path d="M80.5 0L83.7555 10.0193L94.2903 10.0193L85.7674 16.2115L89.0229 26.2307L80.5 20.0385L71.9771 26.2307L75.2326 16.2115L66.7097 10.0193L77.2445 10.0193L80.5 0Z" fill="#FFFCF9"/>
+                        <path d="M112.5 0L115.755 10.0193L126.29 10.0193L117.767 16.2115L121.023 26.2307L112.5 20.0385L103.977 26.2307L107.233 16.2115L98.7097 10.0193L109.245 10.0193L112.5 0Z" fill="#FFFCF9"/>
+                        <path d="M145.5 0L148.755 10.0193L159.29 10.0193L150.767 16.2115L154.023 26.2307L145.5 20.0385L136.977 26.2307L140.233 16.2115L131.71 10.0193L142.245 10.0193L145.5 0Z" fill="#FFFCF9"/>
+                      </svg>                    
+                    </span>
+                    <span>5점</span>
+                    <span class="star-point__count" aria-hidde="true">5</span>
+                  </dd>
+                </dl>
+                <footer class="review__author">
+                  <p class="review__author-name">
+                    <span class="a11y-hidden">리뷰 작성자</span>
+                    <span>김데레사</span>
+                  </p>
+                </footer>
+              </article>
+            </section>
+            <section class="favorite">
+              <div class="favorite__container">
+                <h2 class="favorite__title">카페 W 인기 강좌</h2>
+                <ol class="favorite__lecture-list">
+                  <li class="favorite__lecture-item">
+                    <a href="#">인터렉션 주니어</a> <em class="up" aria-label="순위 상승"></em>
+                  </li>
+                  <li class="favorite__lecture-item">
+                    <a href="#">모바일 웹 UI 제작 실습</a> <em class="new" aria-label="순위 진입"></em>
+                  </li>
+                  <li class="favorite__lecture-item">
+                    <a href="#">UI 구조  &디자인</a> <em class="down"" aria-label="순위 하락"></em>
+                  </li>
+                  <li class="favorite__lecture-item">
+                    <a href="#">React 프로그래밍</a> <em class="stop" aria-label="순위 변동없음"></em>
+                  </li>
+                </ol>
+                <a href="#" class="favorite__more">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>카페 W 강좌 더보기</title>
+                    <path d="M12.8 7.69995V8.29995H8.29995V12.8H7.69995V8.29995H3.19995V7.69995H7.69995V3.19995H8.29995V7.69995H12.8Z" fill="#E27762"/>
+                    <path d="M0 0V-2H-2V0H0ZM16 0H18V-2H16V0ZM16 16V18H18V16H16ZM0 16H-2V18H0V16ZM0 2H16V-2H0V2ZM14 0V16H18V0H14ZM16 14H0V18H16V14ZM2 16V0H-2V16H2Z" fill="#E27762"/>
+                  </svg>                
+                </a>
+              </div>
+              <div class="favorite__lecture-download">
+                <a href="#">브로슈어<br />다운받기</a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full youtube-container">
+          <div class="layout-width">
+            <section class="youtube">
+              <h2 class="a11y-hidden">Youtube AOA11y 채널 추천 영상</h2>
+              <div class="youtube__bg-container">
+                <svg aria-hidden="true" width="70" height="95" viewBox="0 0 70 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 0L39.2658 13.1287H53.0701L41.9022 21.2426L46.1679 34.3713L35 26.2574L23.8321 34.3713L28.0978 21.2426L16.9299 13.1287H30.7342L35 0Z" fill="#7D6F5D" fill-opacity="0.3"/>
+                  <line x1="1" y1="51" x2="69" y2="51" stroke="#7D6F5D" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M20.3601 67.2248H15L26.9133 94.9456L34.929 77.4976L42.8163 94.9999L55 67.2248L49.6543 67.2347L42.8835 83.1177L34.9052 66.1741L26.9949 83.1177L20.3601 67.2248Z" fill="#7D6F5D" fill-opacity="0.3"/>
+                </svg>              
+              </div>
+              <figure class="youtube__iframe-container">
+                <iframe class="youtube__iframe" src="https://www.youtube.com/embed/lmYSIiZFxPI" allowfullscreen></iframe>
+                <figcaption class="a11y-hidden">착한 마크업 시리즈 - 상품가격 및 할인율</figcaption>
+              </figure>
+              <div class="youtube__bg-container">
+                <svg aria-hidden="true" width="70" height="95" viewBox="0 0 70 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 0L39.2658 13.1287H53.0701L41.9022 21.2426L46.1679 34.3713L35 26.2574L23.8321 34.3713L28.0978 21.2426L16.9299 13.1287H30.7342L35 0Z" fill="#7D6F5D" fill-opacity="0.3"/>
+                  <line x1="1" y1="51" x2="69" y2="51" stroke="#7D6F5D" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M20.3601 67.2248H15L26.9133 94.9456L34.929 77.4976L42.8163 94.9999L55 67.2248L49.6543 67.2347L42.8835 83.1177L34.9052 66.1741L26.9949 83.1177L20.3601 67.2248Z" fill="#7D6F5D" fill-opacity="0.3"/>
+                </svg>              
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full reserve-container">
+          <div class="layout-width">
+            <section class="reserve">
+              <h2 class="reserve__title">cafe w . RESERVE</h2>
+              <p class="reserve__subtitle">a delicate fragrance</p>
+              <p class="reserve__description">입 안 가득 퍼지는 산뜻하고 따뜻한 봄의 향기</p>
+              <a href="#" class="reserve__more button-stroke">자세히 보기</a>
+              <div class="reserve__bg-container">
+                <svg aria-hidden="true" width="70" height="95" viewBox="0 0 70 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35 0L39.2658 13.1287H53.0701L41.9022 21.2426L46.1679 34.3713L35 26.2574L23.8321 34.3713L28.0978 21.2426L16.9299 13.1287H30.7342L35 0Z" fill="#A37356"/>
+                  <line x1="1" y1="51" x2="69" y2="51" stroke="#A37356" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M20.3601 67.2248H15L26.9133 94.9456L34.929 77.4976L42.8163 94.9999L55 67.2248L49.6543 67.2347L42.8835 83.1177L34.9052 66.1741L26.9949 83.1177L20.3601 67.2248Z" fill="#A37356"/>
+                </svg>              
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full pick-container">
+          <div class="layout-width">
+            <section class="pick">
+              <h2 class="pick__title">
+                <span class="line-break pick--large">pick</span>
+                <span class="line-break pick--medium">your</span>
+                <span class="line-break pick--small">favorite</span>
+              </h2>
+              <p class="pick__description">
+                <span class="line-break">다양한 메뉴를</span>
+                <span class="line-break">카페 W에서 즐겨보세요</span>
+              </p>
+              <ul class="pick__good-list" aria-labelledby="카페 W만의 차별화 된 서비스">
+                <li class="pick__good-item">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료 카페</li>
+                <li class="pick__good-item">W 커피와 완벽한 어울림을 자랑하는 푸드</li>
+                <li class="pick__good-item">사용한 시도와 디자인으로 가치를 더하는 상품</li>
+                <li class="pick__good-item">소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</li>
+              </ul>
+              <a href="#" class="pick__more button-stroke">자세히 보기</a>
+              <div class="pick__photo-container">
+                <figure class="pick__photo-image photo1">
+                  <img src="./images/photo01.jpg" alt="">
+                </figure>
+                <figure class="pick__photo-image photo2">
+                  <img src="./images/photo02.jpg" alt="">
+                </figure>
+                <figure class="pick__photo-image photo3">
+                  <img src="./images/photo03.jpg" alt="">
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full coffee-lab-container">
+          <div class="layout-width">
+            <section class="coffee-lab">
+              <h2 class="coffee-lab__title">
+                <span class="coffee-lab--thin">Cafe W </span>
+                <span class="coffee-lab--bold">COFFEE LAB</span>
+              </h2>
+              <p class="coffee-lab__description">
+                <span>최고의 커피를 향한 끊임없는 노력, </span>
+                <span class="coffee-lab--bold">카페 W 커피연구소</span>
+              </p>
+              <ul class="coffee-lab__lab-list">
+                <li class="coffee-lab__lab-item menu">
+                  <a href="#">lab menu</a>
+                </li>
+                <li class="coffee-lab__lab-item brista">
+                  <a href="#">lab barista</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full euid-container">
+          <div class="layout-width">
+            <section class="euid">
+              <h2 class="a11y-hidden">이듬 강좌 소개</h2>
+              <div class="medal" tabindex="0">
+                <div class="medal__face">
+                  <div class="medal__face--front">
+                    <svg width="90" height="122" viewBox="0 0 90 122" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M44.9999 0L50.4844 16.86H68.2328L53.8741 27.28L59.3586 44.14L44.9999 33.72L30.6411 44.14L36.1257 27.28L21.7669 16.86H39.5153L44.9999 0Z" fill="#A37356"/>
+                      <line x1="1.28571" y1="65.4933" x2="88.7143" y2="65.4933" stroke="#A37356" stroke-width="2.57143" stroke-linecap="round"/>
+                      <path d="M26.1772 86.3311H19.2856L34.6027 121.93L44.9086 99.5235L55.0495 122L70.7142 86.3311L63.8412 86.3437L55.1359 106.741L44.878 84.9817L34.7077 106.741L26.1772 86.3311Z" fill="#A37356"/>
+                    </svg>                      
+                  </div>
+                  <div class="medal__face--back">
+                    <dl class="euid__introduce">
+                      <dt class="euid__title">이듬 블렌디드 러닝</dt>
+                      <dd class="euid__description">
+                        이듬 블렌디드 러닝 과정에서 운영하는 각 과정의 자세한 커리큘럼을 확인하려면 <em class="euid--bold">과정 보기</em>를 눌러주세요.
+                      </dd>
+                    </dl>
+                    <a href="#" class="euid__more button-stroke">과정 보기</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="layout-full store-container">
+          <div class="layout-width">
+            <section class="store">
+              <h2 class="a11y-hidden">카페 W 매장 안내</h2>
+              <p class="store__description store--large">
+                카페 W를 가까이에서 경험해보세요.
+              </p>
+              <p class="store__description store--normal">
+                고객님과 가장 가까이 있는 매장을 찾아보세요!
+              </p>
+              <ul class="store__service-list">
+                <li class="store__service-item">차별화된 커피 경험을 누릴 수 있는 <span class="store--bold">리저브 매장</span></li>
+                <li class="store__service-item">다양한 방법으로 편리하게 즐길 수 있는 <span class="store--bold">드라이브 스루 매장</span></li>
+                <li class="store__service-item">함께해서 더 따뜻할수 있는 지역사회 소통 공간 <span class="store--bold">커뮤니티 매장</span></li>
+              </ul>
+              <a href="#" class="store__more button-stroke">매장 찾기</a>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="layout-full footeer-container">
+      <div class="layout-width">
+        <footer class="footer">
+          <figure class="footer__logo">
+            <img src="./images/cafew-footer-logo.svg" alt="cafe W">
+          </figure>
+          <div class="footer__container">
+            <ul class="footer__guide-list">
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">멤버스 이용약관</a></li>
+              <li><a href="#">가맹 안내</a></li>
+              <li><a href="#">대량 쿠폰판매</a></li>
+              <li><a href="#">채용 안내</a></li>
+              <li><a href="#">고객의 소리</a></li>
+              <li><a href="#">사이트맵</a></li>
+            </ul>
+          </div>
+          <address class="footer__address">
+            <div class="footer__address__row-group">
+              <span>서울시 강남구 테헤란로 10길 18 K&I 타워 카페 W (2F) </span>
+              <span aria-hidden="true">ㅣ</span>
+              <span>연락처 : 02-6951-2121</span>
+            </div>
+            <div class="footer__address__row-group">
+              <span>사업자 등록번호 : 107-86-16302</span>
+              <span aria-hidden="true">ㅣ</span>
+              <span>통신판매업 신고 : 강남 제 002519호</span>
+              <span aria-hidden="true">ㅣ</span>
+              <span>대표이사 : 김데레사 </span>
+            </div>
+          </address>
+          <small class="footer__copyright">&copy; 2020 CAFE W COMPANY. ALL rights reserved.</small>
+        </footer>
+      </div>
+    </div> 
+   </div>
+  
+ </body>
+</html>

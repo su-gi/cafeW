@@ -1,0 +1,140 @@
+.review-favorite-container{
+  background: var(--primary-bg-color3);
+}
+.review-favorite-container .layout-width{
+  padding: 30px 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+/* 리뷰 영역 */
+.review{
+  position: relative;
+  width: 743px;
+  height: 433px;
+  padding: 90px 167px 90px 91px;
+  background: var(--primary-bg-color);
+  overflow: hidden;
+}
+.review__title{
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.review__content{
+  line-height: 1.8;
+  margin: 10px 0 19px;
+}
+
+/* 강의 평점 */
+.review .star-point__detail span{
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.review span.star-point__count{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-25%);
+  margin-right: 0;
+  font-size: 60rem;
+  width: 334px;
+  height: 840px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color4);
+}
+
+/* 리뷰 작성자 */
+.review__author{
+  margin-top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.review .button-play{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+/* 카페 W 추천강좌 */
+
+/* 카페 W 추천강좌 리스트 컨테이너 */
+.favorite__container{
+  position: relative;
+  width: 436px;
+  padding: 30px 19px;
+  color: var(--primary-bg-color3);
+  background: #fff;
+}
+.favorite__title{
+  margin: 0 0 24px 0;
+  font-size: 2.2rem;
+}
+.favorite__lecture-list{
+  margin: 0;
+}
+.favorite__lecture-item{
+  margin: 10px 0 0 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.favorite__lecture-item a{
+  flex-grow: 1;
+  margin-right: 15px;
+}
+.favorite__lecture-item em{
+  width: 28px;
+  height: 28px;
+  background-image: url(./../images/icon-favorite-sprite.svg);
+  background-repeat: no-repeat;
+}
+
+.favorite__lecture-item .up{
+  background-position: 0 0;
+}
+.favorite__lecture-item .new{
+  background-position: 0 -28px;
+}
+.favorite__lecture-item .down{
+  background-position: 0 -56px;
+}
+.favorite__lecture-item .stop{
+  background-position: 0 -84px;
+}
+
+.favorite__more{
+  position: absolute;
+  top: 34px;
+  right: 24px;
+}
+
+/* 브로슈어 다운받기 */
+.favorite__lecture-download{
+  background-color: yellow;
+  position: relative;
+  width: 436px;
+}
+.favorite__lecture-download a{
+  font-size: 3.1rem;
+  font-weight: 700;
+  display: block;
+  padding: 25px 0 67px 25px;
+  margin-top: 20px; 
+  background: var(--season-text-color2) url(./../images/icon-arrow.svg) no-repeat 18px 108px;
+}
+.favorite__lecture-download::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 275px;
+  height: 203px;
+  background: url(./../images/image-brochure.png) no-repeat 0 0;
+}

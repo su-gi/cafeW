@@ -1,0 +1,47 @@
+.footeer-container .layout-width{
+  width: auto;
+}
+
+/* 푸터 */
+.footer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+/* 로고 */
+.footer__logo{
+  margin: 40px 0;
+}
+
+/* 안내 링크 */
+.footer__container{
+  width: 100%;
+  border-top: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
+  order: -1;
+}
+.footer__guide-list{
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 30px 0;
+}
+.footer__guide-list li{
+  margin: 0 30px;
+}
+
+/* 주소 */
+.footer__address{
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer__address__row-group{
+  margin-bottom: 5px;
+}
+
+/* 저작권 */
+.footer__copyright{
+  font-size: 1em;
+}

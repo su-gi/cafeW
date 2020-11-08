@@ -1,0 +1,112 @@
+/* 음료 애니메이션 */
+@keyframes bounce{
+  0%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+}
+
+
+/* 시즌 섹션 (배경색상 지정) */
+.season-container{
+  background-color: var(--season-bg-color);
+}
+
+/* 시즌 섹션 */
+.season{
+  padding: 83px 919px 120px 119px;
+  position: relative;
+  text-align: center;
+}
+
+/* 시즌 음료 소개 코멘트 */
+.season__description{
+  color: var(--season-text-color);
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--season-text-color);
+}
+[class^="season__description-text"]{
+  display: block;
+}
+.season__description-text1{
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.season__description-text2{
+  font-size: 4rem;
+}
+.season-bar{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.season__description .season-bar::before,
+.season__description .season-bar::after{
+  content: "";
+  min-width: 160px;
+  height: 1px;
+  background-color: var(--season-text-color);
+}
+.season__description-text3,
+.season__description-text4{
+  font-size: 9rem;
+  color: var(--season-text-color2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.season__description-text5{
+  font-size: 2.6rem;
+}
+
+/* 시즌 음료 리스트 */
+.season__beverage-list{
+  position: absolute;
+  width: 919px;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+.season__beverage-item{
+  position: absolute;
+  animation: bounce 600ms alternate ease-in-out infinite;
+}
+.season__beverage-item:nth-child(1){
+  width: 441px;
+  height: 445px;
+  top: 113px;
+  right: 523px;
+  /* background-color: lightgreen; */
+}
+.season__beverage-item:nth-child(2){
+  width: 441px;
+  height: 428px;
+  top: 62px;
+  right: 300px;
+  animation-delay: 200ms;
+  /* background-color: skyblue; */
+}
+.season__beverage-item:nth-child(3){
+  width: 441px;
+  height: 415px;
+  top: 188px;
+  right: 0;
+  animation-delay: 400ms;
+  /* background-color: yellow; */
+}
+
+.season__beverage-item img{
+  width: 100%;
+  height: 100%;
+}
+/* 자세히 보기 링크 */
+.season__more{ 
+  display: inline-block;
+  margin-top: 40px;
+  height: 39px;
+  color: var(--season-text-color2);
+  padding: 10px 25px;
+  border: 1px solid var(--season-text-color2);
+}

@@ -1,0 +1,18 @@
+{
+  "name": "cafeW_Jeonju",
+  "scripts": {
+    "start": "npm run clean && npm run dev",
+    "clean": "rimraf -rf .cache dist build",
+    "dev": "parcel src/index.html src/pages/*.html",
+    "build": "npm run clean && parcel build src/index.html src/pages/*.html --out-dir build --no-cache && node post-build.js",
+    "serve": "live-server build"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "lodash.escaperegexp": "^4.1.2",
+    "parcel-bundler": "^1.12.4",
+    "replace-in-file": "^6.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.29.0"
+  }
+}

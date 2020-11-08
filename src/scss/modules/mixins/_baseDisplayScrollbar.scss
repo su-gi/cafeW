@@ -1,0 +1,7 @@
+@mixin baseDisplayScrollbar($isScrollable: false) {
+  :root {
+    // 스크롤바 Y축 항상 보이도록 설정
+    overflow-y: if($isScrollable, visible, auto);
+    min-height: if($isScrollable, 100.05vh, 100vh);
+  }
+}

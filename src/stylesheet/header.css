@@ -1,0 +1,64 @@
+.header-container{
+  border-bottom: 1px solid var(--primary-border-color);
+}
+/* 헤더 */
+.header{
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 로고 */
+.header__logo{
+  width: 100px;
+  height: 40px;
+  margin: 21px 0;
+}
+.header__logo a{
+  display: block;
+}
+.header__logo img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 로그인 및 회원가입 링크 */
+.header__member-list{
+  order: -1;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: var(--text-normal);
+}
+
+.header__member-item:nth-child(n+2){
+  margin-left: 30px;
+}
+
+
+/* 검색 폼 */
+.search{
+  width: 242px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+.search__input-container{
+  flex-grow: 1;
+}
+.search__input-container input{
+  background-color: transparent;
+  height: 40px;
+  padding: 0 0 0 0.5em;
+  border: 0;
+  width: 100%;
+  color: var(--primary-color);
+}
+.search__button-container button{
+  background-color: transparent;
+  height: 40px;
+  padding: 0;
+  border: 0;
+}

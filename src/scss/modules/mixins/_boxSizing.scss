@@ -1,0 +1,21 @@
+@mixin boxSizing($type: border-box) {
+  box-sizing: $type;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+@mixin inheritBoxSizing($target: body, $type: border-box) {
+  #{$target} {
+    @include boxSizing($type);
+
+    * {
+      @include boxSizing($type);
+    }
+  }
+}
+
+@mixin baseBoxSizing($box-type: border-box) {
+  @include inheritBoxSizing(body, $box-type);
+}
