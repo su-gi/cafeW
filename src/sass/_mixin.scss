@@ -1,0 +1,20 @@
+//플렉스 박스 믹스인
+@mixin  flexbox($fd:row, $fw:nowrap, $ma:flex-start, $ca:center) {
+  display: flex;
+  flex-direction:$fd;
+  flex-wrap:$fw;
+  justify-content: $ma;
+  align-items: $ca;
+  }
+//버튼 기본 스타일 초기화
+@mixin buttonNone {
+  padding: 0;
+  border: 0;
+  background-color:transparent;
+}
+//가로/세로 크기를 가진 블록박스 설정하기
+@mixin boxSize($sw, $sh) {
+  display: block;
+  width: $sw;
+  height: $sh;
+}

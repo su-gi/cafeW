@@ -1,0 +1,70 @@
+@import "./mixin";
+
+//헤더 컨테이너
+.header-container{
+  border-bottom: 1px solid  $header-border-color;
+}
+//헤더
+.header{
+  height: 80px;
+  @include flexbox($ma:space-between);
+
+  //로고
+  &__logo{
+    width: 100px;
+    height: 40px;
+    a{
+      display: block;
+    }
+    svg{
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  //회원가입 및 로그인 링크
+  &__member-list{
+    order: -1;
+    @include flexbox();
+    li{
+      margin-right: 15px;
+    }
+    a{
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  //검색폼
+  .search{
+    @include flexbox();
+    border-bottom: 1px solid $header-border-color;
+    input{
+      color: inherit;
+      width: 200px;
+      height: 40px;
+      padding:1em;
+      border: 0;
+      background-color:transparent;
+    }
+    input:focus{
+      outline: 0;
+    }
+    &__button-container{
+      button{
+        @include buttonNone();
+      }
+      button:focus {
+        outline: 0;
+      }
+      button:focus-visible {
+        outline: 2px solid blueviolet;
+      }
+      .ir{
+        cursor: pointer;
+        @include boxSize(40px, 40px);
+        background:url(./../images/icon-search.svg) no-repeat 0 0 / 100% 100%;
+      }
+    }
+  }
+}
