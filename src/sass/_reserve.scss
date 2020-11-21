@@ -1,0 +1,42 @@
+.reserve-container {
+  background: radial-gradient(109.05% 429.25% at 50% 50%, rgba(23, 15, 4, 0) 0%, #3c1d0a 100%),
+  url(./../images/reserve-bg.jpg)no-repeat 50% 50% / cover;
+}
+.reserve {
+  position: relative;
+  padding: 90px 0 0 224px;
+  min-height: 458px;
+  &__title, &__subtitle{
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__title{
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  &__subtitle{
+    font-size: 2.6rem;
+  }
+  &__description{
+    font-size: 1.6rem;
+    width: 192px;
+    line-height:1.3125;
+  }
+  &__more{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    padding: 10px 25px;
+    margin-top:20px;
+  }
+  &__bg-container{
+    position: absolute;
+    top:124px;
+    left: 140px;
+    path{
+      fill: #ffffff;;
+    }
+    line{
+      stroke: #ffffff;
+    }
+  }
+}
