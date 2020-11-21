@@ -4,13 +4,13 @@ const replace = require('replace-in-file');
 const escapeRegExp = require('lodash.escaperegexp');
 
 // 빌드를 출력하는 디렉토리
-let baseDir = 'build';
+let baseDir = 'docs';
 
 // 정적 파일이 이동 될 디렉토리의 이름
 let staticDir = 'images';
 
 // 빌드 된 파일 (css, JavaScript)이 이동 될 디렉토리
-let assetsDir = 'css';
+let assetsDir = 'assets';
 
 // staticDir 디렉토리가 없으면 새로운 폴더를 만듭니다.
 if (!fs.existsSync(path.join(__dirname, baseDir, staticDir))) {
