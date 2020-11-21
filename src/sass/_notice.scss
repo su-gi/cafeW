@@ -1,0 +1,60 @@
+@import "./mixin";
+
+.notice-container{
+  position: relative;
+}
+.notice{
+  $box-height:60px;
+  $list-height:24px;
+
+  @include flexbox($ma:space-between);
+  padding: 0 15px 0 30px;
+  width: 420px;
+  height: $box-height;
+  border-radius: $box-height/2;
+  position: absolute;
+  top: -94px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $notice-bg-color;
+  
+  &__inform-list{
+    margin: 0;
+    height: 24px;
+    overflow: hidden;
+  } 
+  &__inform-item{
+    height: $list-height;
+    @include flexbox;
+    &::before{
+      content: "";
+      width: 26px;
+      height: $list-height; 
+      background: url(./../images/icon-sound.svg) no-repeat 0 0 /100% 100%; 
+      margin-right: 20px;
+    }
+    a{
+      width: 160px;
+      margin-right: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .close-button{
+    border: 0;
+    background-color: transparent;
+  }
+}
+// .notice{
+//   background-color: #E27762;
+//   width: 601px;
+//   overflow: hidden;
+//   height: 60px;
+//   border-radius: 33px;
+//    &notice__inform-list{
+//      float: left;
+//    }
+// }
+
+// .close-button {float: right;}

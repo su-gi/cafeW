@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <div class="body-container">
         <div class="layout-full header-container">
             <div class="layout-width">
@@ -18,7 +17,7 @@
                         <a href="index.html">
                             <svg aria-labelledby="cafeWLogo" viewBox="0 0 235 90" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <title id="cafeWLogo">cafeW</title>
+                                <title id="cafeWLogo">Cafe W</title>
                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                     d="M92.6917 82.0033C87.4115 90.232 60.9144 89.4822 49.9492 89.4822C38.9854 89.4822 14.8211 89.4822 7.20677 82.0033C0.507717 75.3406 0 52.0112 0 44.7411C0 37.4697 0.507717 14.1402 7.20677 7.57447C14.8211 0 38.9854 0 49.9492 0C60.9144 0 85.0774 0 92.6917 7.57447C99.3921 14.1402 100 37.4683 100 44.7411C100 52.0112 99.3921 75.3406 92.6917 82.0033ZM87.4115 12.827C82.8421 8.28154 64.3655 7.47482 49.9492 7.47482C35.533 7.47482 17.055 8.28154 12.5885 12.827C9.03453 16.3611 7.41122 32.7221 7.41122 44.7411C7.41122 56.7587 9.0359 73.1211 12.5885 76.6551C17.055 81.1979 35.533 82.107 49.9492 82.107C64.3655 82.107 82.8421 81.1979 87.4115 76.6551C90.9655 73.1197 92.4872 56.7587 92.4872 44.7411C92.4886 32.7221 90.9655 16.3611 87.4115 12.827ZM79.6956 54.4354H20.2028L16.5473 25.7537L34.7206 38.2764L49.9492 23.0278L65.2794 38.2777L83.4527 25.7551L79.6956 54.4354ZM78.2754 65.6463H21.7259L20.8121 59.385H79.0878L78.2754 65.6463ZM64.6715 45.7512L49.9492 31.2083L35.2297 45.7512L24.0614 37.8737L25.3801 48.2765H74.5183L75.9386 37.8737L64.6715 45.7512Z"
                                     fill="#FFFCF9" />
@@ -47,7 +46,6 @@
                             </div>
                         </fieldset>
                     </form>
-
                 </header>
             </div>
         </div>
@@ -104,12 +102,65 @@
             <main class="main">
                 <div class="layout-full season-container">
                     <div class="layout-width">
-                        <section class="season">시즌음료</section>
+                        <section class="season">
+                            <h2 class="a11y-hidden">시즌 음료</h2>
+                            <p class="season__description">
+                                <span class="season__description-text1">spring is a cup</span>
+                                <span class="season__description-text2 season-bar"><span>of</span></span>
+                                <span class="season__description-text3">choux</span>
+                                <span class="season__description-text4">cream</span>
+                                <span class="season__description-text5">봄이 왔다 커피가 설렌다</span>
+                            </p>
+                            <ul class="season__beverage-list">
+                                <li class="season__beverage-item">
+                                    <img src="./images/beverage1.png" srcset="./images/beverage1@2x.png 2x"
+                                        alt="strawberry layer - choux cream frappuccino(딸기 레이어 슈 크림 프라푸치노)">
+                                </li>
+                                <li class="season__beverage-item">
+                                    <img src="./images/beverage2.png" srcset="./images/beverage2@2x.png 2x"
+                                        alt="choux cream latte(슈 크림 라떼)">
+                                </li>
+                                <li class="season__beverage-item">
+                                    <img src="./images/beverage3.png" srcset="./images/beverage3@2x.png 2x"
+                                        alt="spring peach green tea(스프링 피치 그린 티)">
+                                </li>
+                            </ul>
+                            <a href="#" class="season__more">자세히보기</a>
+                        </section>
                     </div>
                 </div>
                 <div class="layout-full notice-container">
                     <div class="layout-width">
-                        <section class="notice">공지사항</section>
+                        <section class="notice">
+                            <h2 class="a11y-hidden">공지사항</h2>
+                            <ul class="notice__inform-list">
+                                <li class="notice__inform-item">
+                                    <a href="#">카페 W 영업시간 조정 안내 사항입니다. 필독해 주세요.</a>
+                                    <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                                </li>
+                                <li class="notice__inform-item">
+                                    <a href="#">이듬 강좌 개설 안내</a>
+                                    <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                                </li>
+                                <li class="notice__inform-item">
+                                    <a href="#">멀티캠퍼스 휴관일 안내</a>
+                                    <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                                </li>
+                                <li class="notice__inform-item">
+                                    <a href="#">AOA11Y 라이브 일정</a>
+                                    <time datetime="2020-10-13T11:59:35">2020.10.13</time>
+                                </li>
+                            </ul>
+                            <button class="close-button" type="button">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>공지사항 닫기</title>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M31 11.0823L29.9177 10L20.5002 19.4172L11.0823 10L10 11.0831L19.4175 20.4998L10 29.9169L11.0823 30.9985L20.4996 21.5819L29.9177 30.9992L31 29.9162L21.5823 20.4992L31 11.0823Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </section>
                     </div>
                 </div>
             </main>

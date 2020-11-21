@@ -1,15 +1,13 @@
-/* 본문 전체를 포함하는 컨테이너 */
 .body-container{
   display: flex;
   flex-flow: row wrap;
 }
-// /* 각각의 행 그룹 컨테이너 */
 .layout{
   &-full{
     width: 100%;
   }
   &-width{
     width: 1440px;
-    margin: 0 auto;    
+    margin: 0 auto;
   }
 }

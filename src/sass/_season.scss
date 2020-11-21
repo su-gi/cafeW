@@ -1,0 +1,97 @@
+@import "./mixin";
+
+// 시즌 음료 애니메이션
+@keyframes bounce{
+  0%{
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+// 시즌 컨테이너
+.season-container{
+  background-color: $season-bg-color;
+  color: $season-text-color;
+}
+// 음료 소개 단락 공통
+// [class^="season__description-text"]{
+//   display: block;
+// }
+.season{
+  padding: 83px 919px 120px 119px;
+  text-align: center;
+  position: relative;
+
+  // 음료 소개 단락
+  &__description{
+    &-text1, &-text2, &-text3, &-text4, &-text5{
+      display: block;
+    }
+    &-text1, &-text2{
+      font-size: 4rem;
+    }
+    &-text2{
+      @include flexbox($ma:space-between);
+      &::before,
+      &::after{
+        content: "";
+        display: block;
+        width: 160px;
+        height: 1px;
+        background-color: currentColor;
+      }
+    }
+    &-text3, &-text4{
+      font-size: 9rem;
+      font-weight: 700;
+      color: $season-text-color2;
+    }
+    &-text1, &-text3, &-text4{
+      text-transform: uppercase;
+    }
+    &-text5{
+      font-size: 2.8rem;
+      padding-bottom: 20px;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+  // 음료 이미지
+  &__beverage-item{
+    position: absolute;
+    img{
+      animation: bounce 600ms infinite alternate ease-in-out;
+    }
+    &:nth-child(1){
+      top: 113px;
+      left: 481px;
+    }
+    &:nth-child(2){
+      top: 62px;
+      left: 709px;
+      img{
+        animation-delay: 200ms;
+      }
+    }
+    &:nth-child(3){
+      top: 188px;
+      left: 999px;
+      img{
+        animation-delay: 400ms;
+      }
+    }
+  }
+  // 음료 정보 자세히보기 링크
+  &__more{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $season-text-color2;
+    padding: 10px 25px;
+    border: 1px solid currentColor;
+    margin-top: 40px;
+  }
+}

@@ -1,6 +1,6 @@
 @import "./mixin";
 
-//메인 내비게이션
+// 메인 내비게이션
 .navigation{
   &__menu-list{
     font-size: 1.5rem;
@@ -12,11 +12,11 @@
     margin-top: 7px;
   }
   &__menu-item{
-    > a{
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
+   > a{
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
   }
 }
