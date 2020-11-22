@@ -2,7 +2,7 @@
   "name": "cafeW_Jeonju",
   "scripts": {
     "start": "npm run clean && npm run dev",
-    "clean": "rimraf -rf .cache dist build",
+    "clean": "rimraf -rf .cache dist docs build",
     "dev": "parcel src/index.html src/pages/*.html",
     "build": "npm run clean && parcel build src/index.html src/pages/*.html --out-dir docs --no-cache && node post-build.js",
     "serve": "live-server build"
