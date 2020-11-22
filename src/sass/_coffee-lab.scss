@@ -1,0 +1,100 @@
+.coffee-lab-container{
+  background-color: #fff;
+}
+.coffee-lab{
+  text-align: center;
+  padding: 80px 0 213px 0;
+
+  &--thin{
+    font-weight: 100;
+  }
+  &--bold{
+    font-weight: 700;
+  }
+  &__title, &__description{
+    color: #000;
+    line-height: 1.4;
+  } 
+  &__title{
+    font-size: 4.6rem;
+    margin: 0;
+  }
+  &__description{
+    font-size: 1.6rem;
+    margin-top: 8px;
+    margin-bottom: 0;
+    &::after{
+      content: "";
+      display: block;
+      margin: 55px auto;
+      width: 70px;
+      border-top:1px solid currentColor;
+    }
+  }
+  &__lab-list{
+    width: 1200px;
+    display: flex;
+  }
+  &__lab-item{
+    width: 690px;
+    height: 690px;
+    flex-shrink: 0;
+    background:no-repeat 0 0 / 100% 100%;
+    a{
+      display: inline-block;
+      font-size: 3.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 407px 0 120px;
+      text-align: left;
+
+      &::after{
+        content:"";
+        display:inline-block;
+        width: 0;
+        height: 10px;
+        background-color: #fff;
+        margin: 0;
+        transition: all 0.4s;
+      }
+      &:hover::after, &:focus::after{
+        width: 100%;
+      }
+    }
+  }
+  .menu{
+    background: url(../images/photo-frame1.jpg);
+  }
+  .brista{
+    transform: translate(-184px, 134px);
+    background: url(../images/photo-frame2.jpg);
+  }
+}
+
+// .coffee-lab{
+//   position: relative;
+//   background-color: palevioletred;
+//   color: #000000;
+//   text-align: center;
+//   padding-top: 80px;
+//   &__title{
+//   font-size: 4.6rem;
+//   text-transform: uppercase;
+//   line-Height: 64.4px;  
+//   }
+//   &--thin{
+//     font-weight: 300;
+//   }
+//   &--bold{
+//     font-weight: 800;
+//   }
+//   &__description{
+//     font-size: 18px;
+//   }
+//   &__lab-list{
+//     font-size: 18px;
+//   }
+//   &__lab-item{
+//     font-size: 18px;
+//   }
+// }
